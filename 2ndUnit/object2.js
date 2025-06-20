@@ -66,4 +66,24 @@ const users = [
 // console.log(Object.entries(insta));
 
 //find any property in object
-console.log(insta.hasOwnProperty('tanmay'));
+// console.log(insta.hasOwnProperty('tanmay'));
+
+//destructing of object
+
+const course = {
+    coursename : "WEB DEVELOPMENT",
+    price : "234",
+    courseInstructor : "someone"
+}
+
+//typedef
+const {courseInstructor:instructor} = course
+
+console.log(instructor);
+
+//destructer
+const {coursename,price,courseInstructor} = course;
+
+console.log(coursename);
+console.log(price);
+console.log(courseInstructor);
