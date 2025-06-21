@@ -15,11 +15,11 @@ function heell(){
 
 //heell()
 ///to the same as other programming language
-function add(number1 ,number2){
-    let result = number1 + number2
-    return result
-}
-const result = add(4443523524,234345252352352324)
+// function add(number1 ,number2){
+//     let result = number1 + number2
+//     return result
+// }
+// const result = add(4443523524,234345252352352324)
 // console.log(result);
 
 // `` -> this is known as backticks
@@ -50,14 +50,14 @@ function cal(val1,val2,...num3){
 // console.log(cal(234,2356,12,6756,45));
 
 //function for object
-const user = {
-    username1 : "rudra",
-    id : "23525"
-}
+// const user = {
+//     username1 : "rudra",
+//     id : "23525"
+// }
 function handle(otherobject){
     // console.log(`Username is ${otherobject.username1} \nid is ${otherobject.id}`);
 }
-handle(user)
+// handle(user)
 
 
 //function for object
@@ -66,4 +66,62 @@ const arr = [2523,575,4344]
 function arrr(newarray){
     return newarray[4]//if you demand the higher index which is not available it returns undefined
 }
-console.log(arrr(arr));
+// console.log(arrr(arr));
+
+
+//this and arrow function
+
+const user = {
+    username : "nikaido",
+    ability :"control time",
+    //this is same as cpp it is used to point out the variable in the scope
+    welcomeMess:function(){//new declaration of function
+        console.log(`${this.username} ,welcome to website`);  
+        console.log(this);
+              
+    }
+}
+
+// user.welcomeMess()
+// user.username = "Noi"
+// user.welcomeMess()
+
+// console.log(this); // now this points to the empty object because there is no global object in this
+//Interview question browser ke andar jo object hai wo window object hai and in code editor this refers to the empty object
+/*what is empty object -> 
+    let obj = {}
+    ex: 
+    let student = {}
+    console.log(student);//output {}
+*/
+// Arrow function
+// function chai(){
+//     let name = "sakura"
+//     console.log(this.name);//undefined
+//     //we cant use this in function we use this only in nested 
+// }
+// chai()
+
+// const chai = function (){
+//     let name = "sakura"
+//     console.log(this.name);//undefined
+// }
+// chai()
+
+//Arrow Function
+// const chai = () => {
+//     let name = "sakura"
+//     console.log(this);//undefined
+// }
+// chai()
+
+//implicit return: if you have only one line code
+// const adding = (numb1,numb2) => numb1 + numb2
+// console.log(adding(43,63432542351351325325));
+
+//if we use curly braces then always use return keyword and if we use paranthese then no need to use return .Very useful in react
+//explicit return means use return keyword 
+// if we have  to  return object then 
+const addtwo = (nums1,nums2) => ({username : "Noi"})
+
+console.log(addtwo(2342,23523));
