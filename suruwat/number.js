@@ -12,6 +12,8 @@ const bal = new Number(553)
 const nmm = 23523.623234
 
 // console.log(nmm.toPrecision(5));
+//basic diff toprecision aur tofixed me ye hai ki tofixed decimal ke baad round karta hai jabki toprecision shuruwat se hi karta hai 
+
 
 const hun = 23455555
 // console.log(hun.toLocaleString('en-IN'));
