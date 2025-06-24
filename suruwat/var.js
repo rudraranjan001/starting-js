@@ -1,7 +1,8 @@
 const accountId = 144423
 let accountEmail = "rudrahhhf@gmai.com"
 var accountPassword = "12442"
-accountCity = "Muzaffarpur"
+accountCity = "Muzaffarpur" //bad practice
+// it create a global variable using var like behavior 
 
 // accountId = 234 //not allowed
 accountEmail = "hhheefef@gmail.com"
