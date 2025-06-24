@@ -10,7 +10,7 @@ const name1 = new String('ranjan')
 
 // console.log(name1.__proto__);
 
-const newstring = name1.substring(0,5)
+const newstring = name1.substring(0,5) // Sub string is a method 'substring()' used to extract the portion of string without manipulating the real string
 // console.log(newstring);
 
 const new2 = name1.slice(0,-5) //reverse
@@ -18,7 +18,7 @@ const new2 = name1.slice(0,-5) //reverse
 
 const str = "     rana    "
 console.log(str);//     rana
-console.log(str.trim());// rana specially use for form where user intentionally give extra space
+console.log(str.trim());// rana, specially use for form where user intentionally give extra space
 
 const url = "https://hpworld.com/hpcare%20customer"
 
@@ -27,3 +27,5 @@ console.log(url.includes('ranjan')); //check whether the string is include or no
 
 const name2 ="saturo-gojo"
 console.log(name2.split('-')); //[ 'saturo', 'gojo' ]
+//split() ek mathod hai jo string ko array of substring mein bat deta hai.
+//It does not modify the string it gives new array.
